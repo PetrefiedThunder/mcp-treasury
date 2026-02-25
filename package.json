@@ -1,0 +1,38 @@
+{
+  "name": "mcp-treasury",
+  "version": "1.0.0",
+  "description": "MCP server for US Treasury fiscal data \u2014 debt, rates, auctions, spending",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "treasury",
+    "fiscal",
+    "debt",
+    "finance",
+    "government"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "bin": {
+    "mcp-treasury": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PetrefiedThunder/mcp-treasury"
+  }
+}
