@@ -1,25 +1,31 @@
 # mcp-treasury
 
-MCP server for [US Treasury Fiscal Data API](https://fiscaldata.treasury.gov/api-documentation/). National debt, interest rates, auctions, exchange rates, federal spending. No API key required.
+Access US Treasury data — debt, interest rates, spending, and auction results.
+
+> **Free API** — No API key required.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_treasury_rates` | Daily Treasury yield curve rates |
-| `get_national_debt` | Total public debt outstanding |
-| `get_auction_results` | Treasury securities auction results |
-| `get_exchange_rates` | Treasury foreign exchange rates |
-| `get_federal_spending` | Monthly federal revenue and spending |
+| `get_treasury_rates` | Get daily Treasury yield curve rates (bill, note, bond rates). |
+| `get_national_debt` | Get the US national debt (total public debt outstanding). |
+| `get_auction_results` | Get Treasury securities auction results (bills, notes, bonds, TIPS, FRN). |
+| `get_exchange_rates` | Get Treasury-reported foreign exchange rates. |
+| `get_federal_spending` | Get monthly Treasury statement data on federal revenue and spending. |
 
-## Install
+## Installation
 
 ```bash
+git clone https://github.com/PetrefiedThunder/mcp-treasury.git
+cd mcp-treasury
 npm install
 npm run build
 ```
 
 ## Usage with Claude Desktop
+
+Add to your `claude_desktop_config.json`:
 
 ```json
 {
@@ -32,9 +38,11 @@ npm run build
 }
 ```
 
-## No API Key Required
+## Usage with npx
 
-The Treasury Fiscal Data API is free and open. No authentication needed.
+```bash
+npx mcp-treasury
+```
 
 ## License
 
