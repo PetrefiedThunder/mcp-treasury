@@ -46,4 +46,4 @@ npx mcp-treasury
 
 ## License
 
-MIT
+Apache-2.0
