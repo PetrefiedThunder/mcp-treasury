@@ -1,7 +1,7 @@
 {
   "name": "mcp-treasury",
   "version": "1.0.0",
-  "description": "MCP server for US Treasury fiscal data \u2014 debt, rates, auctions, spending",
+  "description": "MCP server for US Treasury fiscal data — debt, rates, auctions, spending",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -17,7 +17,7 @@
     "government"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
